@@ -108,7 +108,6 @@ class Hash_table():
 
 
 # Convert json dictionary into a list of objects
-# based on: https://pynative.com/python-convert-json-data-into-custom-python-object/
 def custom_json_decoder(c_name, inDict):
     createdClass = namedtuple(c_name, inDict.keys())(*inDict.values())
     return createdClass
@@ -154,7 +153,6 @@ def main():
     stops_processed = 0
 
     # get time in nanoseconds -- maybe OS-specific?
-    # See https://docs.python.org/3/library/time.html
     t0 = time.perf_counter_ns()
 
     for this_stop in master_stops_list:
@@ -174,7 +172,6 @@ def main():
     print("successful_inserts = " + str(successful_inserts))
     print("collisions = " + str(the_hash_table.collisions))
 
-    # Your test and debug code here...
 
     # Test search
     print("\nTesting Search:")
