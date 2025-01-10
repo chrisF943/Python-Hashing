@@ -1,6 +1,6 @@
 # Orlando Bus Stops Hash Table Implementation
 
-## Description
+## Overview
 This script implements a custom hash table using linear probing and dynamic resizing. It processes data from a JSON file containing bus stops in Orlando, identified by unique stop codes and names. The implementation demonstrates:
 
 - Hashing with collision resolution via linear probing.
@@ -45,9 +45,9 @@ The script requires a JSON file named `stops.json` in the same directory. Each r
 ```
 
 ### Run the Script
-Execute the script in a terminal:
+ To execute the script in a terminal:
 ```bash
-python main.py
+python3 main.py
 ```
 
 ### Output
@@ -58,30 +58,8 @@ python main.py
 
 ---
 
-## Key Functions
-
-### Hash Table Operations:
-- `compute_hash_bucket(key_str)`: Calculates the hash bucket index.
-- `insert(key_str, val_str)`: Inserts a key-value pair.
-- `resize(new_size)`: Resizes the hash table.
-- `search_linear(key_str)`: Searches for a key in the hash table.
-
-### JSON Handling:
-- `load_lynx_json(c_name, f_name)`: Converts JSON into a list of custom Python objects.
-- `load_data_into_dictionary(file_name)`: Loads data into a standard Python dictionary for comparison.
-
-### Main Function:
-- Loads bus stops into the hash table.
-- Measures and displays performance metrics.
-- Tests hash table search functionality.
-
----
-
 ## Performance Highlights
 - Dynamic resizing ensures the hash table maintains efficiency even with high load factors.
 - Linear probing resolves collisions but may increase search time under high load.
 
 ---
-
-## Contact
-For further questions or feedback, please reach out to the script author.
