@@ -21,36 +21,6 @@ Additionally, the script compares hash table performance with a Python dictionar
 
 ---
 
-## Prerequisites
-- Python 3.6 or higher
-- JSON file with bus stop data (`stops.json`)
-
----
-
-## Usage
-
-### Prepare the JSON File
-The script requires a JSON file named `stops.json` in the same directory. Each record should include:
-```json
-[
-    {
-        "code": "1234",
-        "name": "Main St & 1st Ave"
-    },
-    {
-        "code": "5678",
-        "name": "Central Ave & 2nd St"
-    }
-]
-```
-
-### Run the Script
- To execute the script in a terminal:
-```bash
-python3 main.py
-```
-Or simply run in IDE
-
 ### Output
 - Total bus stops processed and inserted.
 - Number of collisions during insertion.
