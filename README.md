@@ -49,6 +49,7 @@ The script requires a JSON file named `stops.json` in the same directory. Each r
 ```bash
 python3 main.py
 ```
+Or simply run in IDE
 
 ### Output
 - Total bus stops processed and inserted.
